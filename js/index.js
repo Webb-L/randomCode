@@ -43,7 +43,7 @@ function randomCode(len, type) {
         data.push(typeArray)
     });
 
-    for (let i = 0; i <= len; i++) {
+    for (let i = 0; i < len; i++) {
         let index = parseInt(Math.random() * data.length + 0);
         password += data[index][parseInt(Math.random() * data[index].length + 0)];
     }
